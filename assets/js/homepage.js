@@ -1,0 +1,1 @@
+fetch('https://arrarat-designs.onrender.com/api/v1/product')
