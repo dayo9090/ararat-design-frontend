@@ -13,15 +13,15 @@ const getAllProducts = async () => {
 };
 
 const displayProducts = async (products) => {
-  const collectionproductcontainer = document.getElementById(
-    "collection-product-container"
+  const categoryproductcontainer = document.getElementById(
+    "category-product-container"
   );
 
-    collectionproductcontainer.innerHTML = "";
+  categoryproductcontainer.innerHTML = "";
 
   products.forEach((product) => {
-      specialProductContainer.innerHTML += `
-<div>                                                  
+    categoryproductcontainer.innerHTML += `
+<div class="col-xl-4 col-6 col-grid-box">                                              
                                                     <div class="basic-product theme-product-1">                    
                                                         <div class="overflow-hidden">
                                                             <div class="img-wrapper">
@@ -102,7 +102,7 @@ const displayProducts = async (products) => {
                                                         </div>
                                                     </div>
  `;
-   });                                                   
+  });
 };
 
 window.addEventListener("DOMContentLoaded", getAllProducts);
